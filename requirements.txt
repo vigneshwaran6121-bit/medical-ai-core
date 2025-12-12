@@ -1,0 +1,7 @@
+﻿monai
+torch
+nibabel
+pydicom
+fastapi
+uvicorn
+python-multipart
