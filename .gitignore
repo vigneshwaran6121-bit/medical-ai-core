@@ -1,4 +1,17 @@
+# Virtual env
 .venv/
-__pycache__/
-.DS_Store
+
+# Medical datasets
+Task09_Spleen/
 data/
+nifti_output/
+
+# Notebooks output
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+
+_Task09_Spleen/
+*.nii
+*.nii.gz
