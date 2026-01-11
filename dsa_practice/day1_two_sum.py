@@ -1,22 +1,21 @@
-def ab(a, b):  # a-num b-target
+def two_sum(nums, target):
     seen = {}
 
-    for index, num in enumerate(a):
-        needed = b - num
+    for index, num in enumerate(nums):
+        needed = target - num
 
         if needed in seen:
-            return [seen[needed], index]
+            return (seen[needed], index)
 
         seen[num] = index
-    return []
+    return
 
 
-# --- Test Block ---
 if __name__ == "__main__":
-    nums = [2, 7, 11, 15]
+    nums = [7, 2, 11, 15]
     target = 9
-    result = ab(nums, target)
+    result = two_sum(nums, target)
 
-    print("Input:", nums)
-    print("Target:", target)
-    print("Result:", result)
+    print("input :", nums)
+    print("target :", target)
+    print("result :", result)
